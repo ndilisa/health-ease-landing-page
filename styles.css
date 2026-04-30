@@ -117,6 +117,8 @@ header .logo {
 
 .feature-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 255, 255, 0.5);
+   /* transform: scale(1.125);*/
 }
 
 .feature-item h3 {
