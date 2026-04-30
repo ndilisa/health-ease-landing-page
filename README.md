@@ -17,7 +17,7 @@ A modern, responsive landing page for a healthcare booking platform that allows 
 
 ## 📸 Preview
 
-(Add a screenshot here later)
+- Live Site URL - https://ndilisa.github.io/health-ease-landing-page/
 
 ## 📂 Project Structure
 
