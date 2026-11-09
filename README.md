@@ -5,8 +5,7 @@ A modern, responsive landing page for a healthcare booking platform that allows 
 ## 🚀 Features
 
 * Appointment booking section
-* Clear "How It Works" process
-* Testimonials for credibility
+* Clear "What do we offer" process
 * Call-to-action for conversions
 * Responsive layout (mobile-friendly)
 
