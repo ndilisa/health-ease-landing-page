@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health-Ease</title>
-    <meta name="description" content="Health-Ease lets you book and manage clinic appointments from your phone, skip queues, and receive reminders.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="favicon" href="health-ease-logo.webp">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Health Ease offers trusted, affordable healthcare: consultations, emergency care, diagnostics, maternity, pharmacy and dental services.">
+   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Health Ease | Caring for You, Made Easy</title>
 </head>
-
 <body>
-    <header class="header-section">
-        <nav aria-label="Main navigation">
-            <ul class="nav-list">
-                <li><a href="#hero-section" class="nav-link">Home</a></li>
-                <li><a href="#feature-section" class="nav-link">Features</a></li>
-                <li><a href="#how-it-works-section" class="nav-link">How It Works</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+   <!--==================== HEADER & NAV ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo"><i class="ri-heart-pulse-fill"></i> Health Ease</a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#home" class="nav__link active-link">Home</a></li>
+               <li><a href="#about" class="nav__link">About</a></li>
+               <li><a href="#services" class="nav__link">Services</a></li>
+               <li><a href="#events" class="nav__link">Events</a></li>
+               <li><a href="#contact" class="nav__link">Contact</a></li>
+               <li><a href="#appointment" class="nav__link">Appointment</a></li>
             </ul>
-        </nav>
-        <img src="health-ease-logo.webp" alt="Blue and white logo of Health-Ease" class="logo">
-    </header>
+            <button class="nav__close" id="nav-close" aria-label="Close menu"><i class="ri-close-large-line"></i></button>
+         </div>
+         <button class="nav__toggle" id="nav-toggle" aria-label="Open menu"><i class="ri-menu-line"></i></button>
+      </nav>
+   </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero-section" class="hero-section">
-            <h1>Skip the clinic queues. Book and manage appointments from your phone.</h1>
-            <p>Book appointments in seconds, receive real-time updates, and check in without standing in long lines at the clinic.</p>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="hero-button">Get Started</a>
-        </section>
-
-        <!-- Features Section -->
-        <section id="feature-section" class="features-section">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <article class="feature-item">
-                    <h3>Book Appointments</h3>
-                    <p class="feature-description">Book appointments in seconds, receive real-time updates, and check in without standing in long lines at the clinic.</p>
-                    <a href="#" class="feature-link">Book Appointments</a>
-                </article>
-
-                <article class="feature-item">
-                    <h3>Get Notifications</h3>
-                    <p class="feature-description">Get instant updates and reminders about your appointment so you always know when to arrive.</p>
-                    <a href="#" class="feature-link">View Message</a>
-                </article>
-
-                <article class="feature-item">
-                    <h3>Check-in Remotely</h3>
-                    <p class="feature-description">Check in remotely using your phone and arrive at the clinic only when it’s your turn.</p>
-                    <a href="#" class="feature-link">Check In</a>
-                </article>
+   <main>
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <span class="section__subtitle">Caring for you, made easy</span>
+               <h1 class="home__title">Quality Healthcare <br>Close To <span>Home</span></h1>
+               <p class="home__description">From check-ups to emergencies, our friendly doctors and nurses are here for you and your family, every day of the week.</p>
+               <div class="home__buttons">
+                  <a href="#appointment" class="button">Book Appointment</a>
+                  <a href="#services" class="button__link">Our services <i class="ri-arrow-right-long-line"></i></a>
+               </div>
             </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section id="how-it-works-section" class="how-it-works-section">
-            <h2>How It Works</h2>
-            <ol>
-                <li>
-                    <h3>Step 1: Create an account</h3>
-                    <p>Sign up using your phone number or ID to get started quickly.</p>
-                </li>
-                <li>
-                    <h3>Step 2: Book your appointment</h3>
-                    <p>Choose your clinic and select a time that works for you.</p>
-                </li>
-                <li>
-                    <h3>Step 3: Receive updates</h3>
-                    <p>Get notifications and reminders so you always know when to arrive.</p>
-                </li>
-                <li>
-                    <h3>Step 4: Check in remotely</h3>
-                    <p>Check in on your mobile device to your account to manage your time efficiently.</p>
-                </li>
-                <li>
-                    <h3>Step 5: Visit at the right time</h3>
-                    <p>Arrive when it’s your turn and get assisted faster.</p>
-                </li>
-            </ol>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials-section" class="testimonials-section">
-            <h2>Testimonials</h2>
-            <blockquote class="testimonials-blocks">
-                <p>I used to spend hours waiting at the clinic, sometimes just to be turned away. With Health-Ease, I booked my appointment and only showed up when it was my turn. It saved me so much time.</p>
-                <footer><cite>Nomsa, Johannesburg</cite></footer>
-            </blockquote>
-
-            <blockquote class="testimonials-blocks">
-                <p>Getting reminders on my phone helped me never miss my appointments again. The process is simple and stress-free.</p>
-                <footer><cite>Thabo, Soweto</cite></footer>
-            </blockquote>
-        </section>
-
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <div class="cta-content">
-                <p class="cta-text">Take control of your clinic visits today. Book your appointment in seconds and skip the queues.</p>
-                <a href="#" class="cta-btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            <div class="home__visual">
+               <div class="home__circle"><i class="ri-stethoscope-line"></i></div>
+               <div class="home__badge home__badge-1"><i class="ri-time-line"></i> Open 7 days</div>
+               <div class="home__badge home__badge-2"><i class="ri-shield-check-line"></i> Qualified staff</div>
             </div>
-        </section>
-    </main>
+         </div>
+      </section>
 
-    <footer class="footer-section">
-        <p>&copy; 2026 Health-Ease. All Rights Reserved.</p>
-    </footer>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__visual"><i class="ri-hospital-line"></i></div>
+            <div class="about__data">
+               <span class="section__subtitle">Who we are</span>
+               <h2 class="section__title">About Health Ease</h2>
+               <p class="about__description">Health Ease is a healthcare provider built around one idea: seeing a doctor should be simple. Our team combines modern equipment with a warm, personal approach, so every patient feels heard, respected and well looked after.</p>
+               <a href="#services" class="button__link">Explore our services <i class="ri-arrow-right-long-line"></i></a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <div class="container">
+            <div class="services__header">
+               <span class="section__subtitle">What we offer</span>
+               <h2 class="section__title">Our Services</h2>
+               <p class="services__description">Complete care under one roof, so you don’t have to go from place to place.</p>
+            </div>
+            <div class="services__content grid">
+               <article class="services__card"><i class="ri-stethoscope-line"></i><h3>General Consultation</h3><p>Check-ups, chronic illness management and referrals with experienced doctors.</p></article>
+               <article class="services__card"><i class="ri-ambulance-line"></i><h3>Emergency Care</h3><p>Fast, expert response for urgent injuries and illness when every minute counts.</p></article>
+               <article class="services__card"><i class="ri-user-heart-line"></i><h3>Maternity &amp; Child Health</h3><p>Antenatal care, immunisations and paediatric support for growing families.</p></article>
+               <article class="services__card"><i class="ri-microscope-line"></i><h3>Lab &amp; Diagnostics</h3><p>Blood tests, X-rays and screenings with quick, accurate results.</p></article>
+               <article class="services__card"><i class="ri-capsule-line"></i><h3>Pharmacy</h3><p>Prescriptions filled on site, with friendly advice from our pharmacists.</p></article>
+               <article class="services__card"><i class="ri-tooth-line"></i><h3>Dental Care</h3><p>Cleanings, fillings and whitening to keep every smile healthy.</p></article>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== EVENTS ====================-->
+      <section class="events section" id="events">
+         <div class="events__container container grid">
+            <div class="events__data">
+               <span class="section__subtitle">Community</span>
+               <h2 class="section__title">Upcoming Health Events</h2>
+               <p class="events__description">Join our free community days for screenings, health talks and wellness advice.</p>
+               <div class="events__info">
+                  <h3>Free Health Screening Day</h3>
+                  <p>Saturday, 14 November 2026 · 09:00 · Main Clinic</p>
+               </div>
+               <a href="#appointment" class="button__link">Reserve your spot <i class="ri-arrow-right-long-line"></i></a>
+            </div>
+            <ul class="events__stats">
+               <li><strong>15k+</strong> Patients cared for</li>
+               <li><strong>40+</strong> Medical professionals</li>
+               <li><strong>12</strong> Years of service</li>
+               <li><strong>24/7</strong> Emergency support</li>
+            </ul>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="container">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Us</h2>
+         </div>
+         <div class="contact__container container grid">
+            <div class="contact__map">
+               <iframe title="Health Ease location" src="https://www.google.com/maps?q=Johannesburg,South+Africa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact__content">
+               <div class="contact__info"><i class="ri-phone-line"></i><h3>Call Us</h3><a href="tel:+27110000000">+27 11 000 0000</a></div>
+               <div class="contact__info"><i class="ri-mail-line"></i><h3>Email Us</h3><a href="mailto:info@healthease.example">info@healthease.example</a></div>
+               <div class="contact__info"><i class="ri-map-pin-line"></i><h3>Visit Us</h3><address>12 Wellness Road, Johannesburg</address></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== APPOINTMENT ====================-->
+      <section class="appointment section" id="appointment">
+         <div class="appointment__container container">
+            <h2 class="section__title">Book Your Appointment</h2>
+            <p>Message us on WhatsApp and we’ll find a time that suits you.</p>
+            <a href="https://api.whatsapp.com/send?phone=27110000000&text=Hello%21%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="button button--light">
+               <span>Book via WhatsApp</span><i class="ri-whatsapp-line"></i>
+            </a>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__data">
+            <a href="#home" class="footer__logo"><i class="ri-heart-pulse-fill"></i> Health Ease</a>
+            <p class="footer__text">Caring for you, made easy.</p>
+         </div>
+         <div class="footer__data">
+            <h3 class="footer__title">Links</h3>
+            <ul class="footer__links">
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer__data">
+            <h3 class="footer__title">Opening Hours</h3>
+            <p class="footer__text">Mon – Fri: 8am – 6pm<br>Sat: 8am – 2pm<br>Emergency: 24/7</p>
+         </div>
+      </div>
+      <small class="footer__copy">&#169; 2026 Health Ease. All rights reserved.</small>
+   </footer>
+
+   <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
