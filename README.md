@@ -14,6 +14,7 @@ A modern, responsive landing page for a healthcare booking platform that allows 
 
 * HTML5
 * CSS3 (Flexbox & Grid)
+* JavaScript
 
 ## 📸 Preview
 
@@ -22,16 +23,14 @@ A modern, responsive landing page for a healthcare booking platform that allows 
 ## 📂 Project Structure
 
 * `index.html` – Main structure
-* `health-ease-style.css` – Custom styling
-* `health-ease-style-alt.css` – Alternative styling version
+* `style.css` – Custom styling
+* `main.js` – Main function interactivity
+* 
 
 ## 🎯 Purpose
 
 This project was built to practice semantic HTML, layout structuring, and responsive design principles.
 
 ## 📌 Future Improvements
-
-* Add JavaScript for interactivity
-* Form validation for bookings
 * Backend integration for real appointments
 
