@@ -4,16 +4,21 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Health Ease offers trusted, affordable healthcare: consultations, emergency care, diagnostics, maternity, pharmacy and dental services.">
-   <link rel="icon" href="health-ease-logo.webp"> <!--type="image/svg+xml">-->
+   <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
    <title>Health Ease | Caring for You, Made Easy</title>
 </head>
 <body>
    <!--==================== HEADER & NAV ====================-->
    <header class="header" id="header">
+      <div class="topbar">
+         <i class="ri-alarm-warning-line"></i> Emergency? Call 24/7:
+         <a href="tel:+27110000000">+27 11 000 0000</a>
+      </div>
       <nav class="nav container">
          <a href="#home" class="nav__logo"><i class="ri-heart-pulse-fill"></i> Health Ease</a>
          <div class="nav__menu" id="nav-menu">
@@ -21,13 +26,17 @@
                <li><a href="#home" class="nav__link active-link">Home</a></li>
                <li><a href="#about" class="nav__link">About</a></li>
                <li><a href="#services" class="nav__link">Services</a></li>
+               <li><a href="#team" class="nav__link">Team</a></li>
                <li><a href="#events" class="nav__link">Events</a></li>
                <li><a href="#contact" class="nav__link">Contact</a></li>
                <li><a href="#appointment" class="nav__link">Appointment</a></li>
             </ul>
             <button class="nav__close" id="nav-close" aria-label="Close menu"><i class="ri-close-large-line"></i></button>
          </div>
-         <button class="nav__toggle" id="nav-toggle" aria-label="Open menu"><i class="ri-menu-line"></i></button>
+         <div class="nav__actions">
+            <button class="nav__theme" id="theme-toggle" aria-label="Switch to dark theme"><i class="ri-moon-line"></i></button>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu"><i class="ri-menu-line"></i></button>
+         </div>
       </nav>
    </header>
 
@@ -75,11 +84,95 @@
             </div>
             <div class="services__content grid">
                <article class="services__card"><i class="ri-stethoscope-line"></i><h3>General Consultation</h3><p>Check-ups, chronic illness management and referrals with experienced doctors.</p></article>
-               <article class="services__card"><i class="ri-ambulance-line"></i><h3>Emergency Care</h3><p>Fast, expert response for urgent injuries and illness when every minute counts.</p></article>
+               <article class="services__card"><i class="ri-hospital-line"></i><h3>Emergency Care</h3><p>Fast, expert response for urgent injuries and illness when every minute counts.</p></article>
                <article class="services__card"><i class="ri-user-heart-line"></i><h3>Maternity &amp; Child Health</h3><p>Antenatal care, immunisations and paediatric support for growing families.</p></article>
                <article class="services__card"><i class="ri-microscope-line"></i><h3>Lab &amp; Diagnostics</h3><p>Blood tests, X-rays and screenings with quick, accurate results.</p></article>
                <article class="services__card"><i class="ri-capsule-line"></i><h3>Pharmacy</h3><p>Prescriptions filled on site, with friendly advice from our pharmacists.</p></article>
                <article class="services__card"><i class="ri-tooth-line"></i><h3>Dental Care</h3><p>Cleanings, fillings and whitening to keep every smile healthy.</p></article>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== TEAM ====================-->
+      <!-- Names and roles are samples: replace with your real staff -->
+      <section class="team section" id="team">
+         <div class="container">
+            <div class="services__header">
+               <span class="section__subtitle">Meet the experts</span>
+               <h2 class="section__title">Our Team</h2>
+               <p class="services__description">Qualified, caring professionals dedicated to your health.</p>
+            </div>
+            <div class="team__filters" role="group" aria-label="Filter team members">
+               <button class="team__filter active-filter" data-filter="all">All</button>
+               <button class="team__filter" data-filter="doctor">Doctors</button>
+               <button class="team__filter" data-filter="specialist">Specialists</button>
+               <button class="team__filter" data-filter="nurse">Nurses</button>
+            </div>
+            <div class="team__content grid">
+               <article class="team__card" data-role="doctor">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Naledi Mokoena"> -->
+                  <div class="team__avatar" style="--hue: 174">NM</div>
+                  <h3 class="team__name">Dr. Naledi Mokoena</h3>
+                  <span class="team__role">General Practitioner</span>
+                  <p class="team__bio">Family medicine and chronic illness care.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Naledi Mokoena">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="doctor">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Thabo Dlamini"> -->
+                  <div class="team__avatar" style="--hue: 14">TD</div>
+                  <h3 class="team__name">Dr. Thabo Dlamini</h3>
+                  <span class="team__role">Emergency Physician</span>
+                  <p class="team__bio">Trauma, injuries and urgent care.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Thabo Dlamini">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="specialist">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Priya Naidoo"> -->
+                  <div class="team__avatar" style="--hue: 200">PN</div>
+                  <h3 class="team__name">Dr. Priya Naidoo</h3>
+                  <span class="team__role">Paediatrician</span>
+                  <p class="team__bio">Child health, growth and immunisation.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Priya Naidoo">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="specialist">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Sarah van der Merwe"> -->
+                  <div class="team__avatar" style="--hue: 330">SM</div>
+                  <h3 class="team__name">Dr. Sarah van der Merwe</h3>
+                  <span class="team__role">Obstetrician &amp; Gynaecologist</span>
+                  <p class="team__bio">Pregnancy, birth and women’s health.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Sarah van der Merwe">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="specialist">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Sipho Khumalo"> -->
+                  <div class="team__avatar" style="--hue: 260">SK</div>
+                  <h3 class="team__name">Dr. Sipho Khumalo</h3>
+                  <span class="team__role">Dentist</span>
+                  <p class="team__bio">Check-ups, fillings and cosmetic dentistry.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Sipho Khumalo">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="specialist">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Dr. Pieter Botha"> -->
+                  <div class="team__avatar" style="--hue: 40">PB</div>
+                  <h3 class="team__name">Dr. Pieter Botha</h3>
+                  <span class="team__role">Radiologist</span>
+                  <p class="team__bio">X-rays, ultrasound and diagnostic imaging.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Dr. Pieter Botha">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="nurse">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Lerato Sithole"> -->
+                  <div class="team__avatar" style="--hue: 150">LS</div>
+                  <h3 class="team__name">Lerato Sithole</h3>
+                  <span class="team__role">Head Nurse</span>
+                  <p class="team__bio">Patient care, triage and ward management.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Nurse Lerato Sithole">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
+               <article class="team__card" data-role="nurse">
+                  <!-- Swap the initials for a photo: <img src="assets/img/team-1.jpg" alt="Ayanda Zulu"> -->
+                  <div class="team__avatar" style="--hue: 300">AZ</div>
+                  <h3 class="team__name">Ayanda Zulu</h3>
+                  <span class="team__role">Midwife</span>
+                  <p class="team__bio">Antenatal, labour and postnatal support.</p>
+                  <a href="#appointment" class="button__link" data-doctor="Nurse Ayanda Zulu">Book <i class="ri-calendar-check-line"></i></a>
+               </article>
             </div>
          </div>
       </section>
@@ -92,8 +185,12 @@
                <h2 class="section__title">Upcoming Health Events</h2>
                <p class="events__description">Join our free community days for screenings, health talks and wellness advice.</p>
                <div class="events__info">
+                  <h3>Mental Health Awareness Day</h3>
+                  <p>Saturday, 01 December 2026 · 09:00 · Main Clinic</p>
+               </div>
+               <div class="events__info">
                   <h3>Free Health Screening Day</h3>
-                  <p>Saturday, 14 November 2026 · 09:00 · Main Clinic</p>
+                  <p>Saturday, 08 December 2026 · 09:00 · Main Clinic</p>
                </div>
                <a href="#appointment" class="button__link">Reserve your spot <i class="ri-arrow-right-long-line"></i></a>
             </div>
@@ -113,6 +210,7 @@
             <h2 class="section__title">Contact Us</h2>
          </div>
          <div class="contact__container container grid">
+            <!-- Replace q= with your clinic address, or paste a Google Maps embed link -->
             <div class="contact__map">
                <iframe title="Health Ease location" src="https://www.google.com/maps?q=Johannesburg,South+Africa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -127,11 +225,59 @@
       <!--==================== APPOINTMENT ====================-->
       <section class="appointment section" id="appointment">
          <div class="appointment__container container">
-            <h2 class="section__title">Book Your Appointment</h2>
-            <p>Message us on WhatsApp and we’ll find a time that suits you.</p>
-            <a href="https://api.whatsapp.com/send?phone=27110000000&text=Hello%21%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="button button--light">
-               <span>Book via WhatsApp</span><i class="ri-whatsapp-line"></i>
-            </a>
+            <div class="appointment__header">
+               <span class="section__subtitle">Appointments</span>
+               <h2 class="section__title">Book Your Appointment</h2>
+               <p>Tell us what suits you and we’ll confirm your slot on WhatsApp. For emergencies, please call <a href="tel:+27110000000" class="appointment__call">+27 11 000 0000</a>.</p>
+            </div>
+
+            <form class="appointment__form" id="booking-form">
+               <label class="field">Full name
+                  <input type="text" name="name" autocomplete="name" required>
+               </label>
+               <label class="field">Phone number
+                  <input type="tel" name="phone" autocomplete="tel" required>
+               </label>
+               <label class="field">Service
+                  <select name="service" required>
+                     <option value="">Choose a service</option>
+                     <option>General Consultation</option>
+                     <option>Maternity &amp; Child Health</option>
+                     <option>Lab &amp; Diagnostics</option>
+                     <option>Pharmacy</option>
+                     <option>Dental Care</option>
+                     <option>Not sure yet</option>
+                  </select>
+               </label>
+               <label class="field">Preferred doctor
+                  <select name="doctor" id="booking-doctor">
+                     <option>Any available</option>
+                        <option>Dr. Naledi Mokoena</option>
+                        <option>Dr. Thabo Dlamini</option>
+                        <option>Dr. Priya Naidoo</option>
+                        <option>Dr. Sarah van der Merwe</option>
+                        <option>Dr. Sipho Khumalo</option>
+                        <option>Dr. Pieter Botha</option>
+                        <option>Nurse Lerato Sithole</option>
+                        <option>Nurse Ayanda Zulu</option>
+                  </select>
+               </label>
+               <label class="field">Preferred date
+                  <input type="date" name="date" id="booking-date" required>
+               </label>
+               <label class="field">Preferred time
+                  <select name="time" required>
+                     <option value="">Choose a time</option>
+                     <option>Morning (8am – 12pm)</option>
+                     <option>Afternoon (12pm – 5pm)</option>
+                     <option>Late afternoon (5pm – 6pm)</option>
+                  </select>
+               </label>
+               <button type="submit" class="button appointment__submit">
+                  <span>Send via WhatsApp</span><i class="ri-whatsapp-line"></i>
+               </button>
+               <p class="appointment__note">Please don’t include medical details here. We only use your information to arrange your appointment.</p>
+            </form>
          </div>
       </section>
    </main>
@@ -148,6 +294,7 @@
             <ul class="footer__links">
                <li><a href="#about">About</a></li>
                <li><a href="#services">Services</a></li>
+               <li><a href="#team">Team</a></li>
                <li><a href="#contact">Contact</a></li>
             </ul>
          </div>
@@ -156,12 +303,12 @@
             <p class="footer__text">Mon – Fri: 8am – 6pm<br>Sat: 8am – 2pm<br>Emergency: 24/7</p>
          </div>
       </div>
-      <small class="footer__copy">&#169; 2026 Health Ease. All rights reserved.</small>
+      <small class="footer__copy">&#169; 2026 Health Ease. All rights reserved. Made by Ndilisa</small>
    </footer>
 
    <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-   <script src="main.js"></script>
+   <script src="assets/js/main.js"></script>
 </body>
 </html>
