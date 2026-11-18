@@ -22,7 +22,7 @@ A modern, responsive landing page for a healthcare booking platform that allows 
 ## 📂 Project Structure
 
 * `index.html` – Main structure
-* `style.css` – Custom styling
+* `styles.css` – Custom styling
 * `main.js` – Main function interactivity
 * 
 
