@@ -84,6 +84,13 @@ button { background: none; border: 0; cursor: pointer; font: inherit; color: inh
 .home__badge-1 { top: 10%; left: 0; }
 .home__badge-2 { bottom: 10%; right: 0; }
 
+.health-logo {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+
+
 /*=============== ABOUT & EVENTS ===============*/
 .about__container, .events__container { align-items: center; row-gap: 2.5rem; }
 .about__visual { display: grid; place-items: center; height: 15rem; border-radius: 1.5rem; background: var(--first-light); color: var(--first-color); font-size: 6rem; }
